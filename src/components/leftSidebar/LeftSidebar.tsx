@@ -80,7 +80,7 @@ const LeftSidebar = () => {
         collapsedWidth='50px'
       >
         <div className='flex flex-col h-full overflow-hidden bg-zinc-100/30'>
-          <div className='flex items-center justify-between gap-4 p-4 shrink-0'>
+          <div className='flex items-center justify-between gap-4 p-4 shrink-0 h-[56px] border-b'>
             <img
               height={20}
               className='h-[24px] w-auto'
