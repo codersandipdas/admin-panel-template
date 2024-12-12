@@ -75,3 +75,14 @@ body {
   font-synthesis-weight: none;
   text-rendering: optimizeLegibility;
 }
+
+.custom-scrollbar {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: all 0.1s;
+}
+.custom-scrollbar:hover {
+  scrollbar-color: #bdbdbd transparent;
+  scrollbar-color: hsl(var(--foreground) / 20%) transparent;
+}
