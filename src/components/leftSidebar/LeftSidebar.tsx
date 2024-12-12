@@ -54,12 +54,14 @@ const LeftSidebar: React.FC<Props> = ({
         onBackdropClick={onBackdropClick}
         onBreakPoint={onBreakPoint}
         breakPoint='md'
-        backgroundColor={'#fff'}
         width='260px'
         collapsedWidth='0px'
+        rootStyles={{
+          borderColor: 'hsl(var(--border))',
+        }}
       >
-        <div className='flex flex-col h-full overflow-hidden bg-zinc-100/30'>
-          <div className='flex items-center justify-between gap-4 p-4 shrink-0 h-[56px] border-b'>
+        <div className='flex flex-col h-full overflow-hidden bg-background'>
+          <div className='flex items-center justify-between gap-4 p-4 shrink-0 h-[56px] border-b border-border'>
             <img
               height={20}
               className='h-[24px] w-auto'

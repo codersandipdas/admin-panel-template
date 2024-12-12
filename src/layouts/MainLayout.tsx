@@ -46,7 +46,7 @@ const MainLayout = () => {
       />
 
       <div className='flex-1 flex flex-col'>
-        <div className='shrink-0 flex gap-4 h-[56px] border-b items-center px-4 py-2'>
+        <div className='shrink-0 flex gap-4 h-[56px] border-b border-border items-center px-4 py-2'>
           {(broken || collapsed) && (
             <button className='' onClick={handleShowSidebar}>
               <MdOutlineMenu size={24} />

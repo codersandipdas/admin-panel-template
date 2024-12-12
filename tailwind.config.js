@@ -7,6 +7,8 @@ export default {
         primary: 'hsl(var(--primary))',
         secondary: 'hsl(var(--secondary))',
         foreground: 'hsl(var(--foreground))',
+        background: 'hsl(var(--background))',
+        border: 'hsl(var(--border))',
       },
     },
   },
