@@ -1,5 +1,8 @@
 import { memo } from 'react';
-import { GoSidebarCollapse, GoSidebarExpand } from 'react-icons/go';
+import {
+  TbLayoutSidebarLeftCollapse,
+  TbLayoutSidebarLeftExpand,
+} from 'react-icons/tb';
 import { Menu, MenuItem, Sidebar, menuClasses } from 'react-pro-sidebar';
 import { Link, NavLink } from 'react-router';
 import { routes } from '../../utils/routes';
@@ -68,7 +71,11 @@ const LeftSidebar: React.FC<Props> = ({
               src={'/assets/logo/logoipsum-297.svg'}
             />
             <button type='button' className='shrink-0' onClick={onCollapse}>
-              {collapsed ? <GoSidebarCollapse /> : <GoSidebarExpand />}
+              {collapsed ? (
+                <TbLayoutSidebarLeftExpand size={20} />
+              ) : (
+                <TbLayoutSidebarLeftCollapse size={20} />
+              )}
             </button>
           </div>
 
