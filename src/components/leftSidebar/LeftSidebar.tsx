@@ -61,6 +61,7 @@ const LeftSidebar: React.FC<Props> = ({
         collapsedWidth='0px'
         rootStyles={{
           borderColor: 'hsl(var(--border))',
+          transition: 'all 300ms, border-color 0ms',
         }}
       >
         <div className='flex flex-col h-full overflow-hidden bg-background'>
