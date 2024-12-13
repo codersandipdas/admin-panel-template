@@ -1,12 +1,14 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { TbLayoutSidebarLeftExpand } from 'react-icons/tb';
-import { Outlet } from 'react-router';
+import { Outlet, useLocation } from 'react-router';
 import LeftSidebar from '../components/leftSidebar/LeftSidebar';
 import ThemeSwitcher from '../components/themeSwitcher/ThemeSwitcher';
 import { routes } from '../utils/routes';
 import { RouteType } from '../utils/types';
 
 const MainLayout = () => {
+  const location = useLocation();
+
   const [collapsed, setCollapsed] = useState(false);
   const [toggled, setToggled] = useState(false);
   const [broken, setBroken] = useState(false);
@@ -30,10 +32,18 @@ const MainLayout = () => {
     setToggled(true);
   };
 
-  const handleMenuClick = (route: RouteType) => {
+  const handleMenuClick = () => {
     if (broken) setToggled(false);
-    setActiveRoute(route);
   };
+
+  useEffect(() => {
+    const currentRoute = routes.find(
+      (route) => route.path === location.pathname
+    );
+    if (currentRoute) {
+      setActiveRoute(currentRoute);
+    }
+  }, [location.pathname]);
 
   return (
     <div className='flex h-screen overflow-hidden'>
