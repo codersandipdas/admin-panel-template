@@ -74,7 +74,9 @@ const MainLayout = () => {
         </div>
 
         <div className='flex-1 p-4 overflow-x-hidden overflow-y-auto custom-scrollbar'>
-          <Outlet />
+          <div className='w-full max-w-[1536px] mx-auto'>
+            <Outlet />
+          </div>
         </div>
       </div>
     </div>
