@@ -10,6 +10,7 @@ export default {
         foreground: 'hsl(var(--foreground))',
         background: 'hsl(var(--background))',
         border: 'hsl(var(--border))',
+        card: 'hsl(var(--card))',
       },
     },
   },

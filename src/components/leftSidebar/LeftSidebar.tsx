@@ -64,7 +64,7 @@ const LeftSidebar: React.FC<Props> = ({
           transition: 'all 300ms, border-color 0ms',
         }}
       >
-        <div className='flex flex-col h-full overflow-hidden bg-background'>
+        <div className='flex flex-col h-full overflow-hidden bg-card'>
           <div className='flex items-center justify-between gap-4 p-4 shrink-0 h-[56px] border-b border-border'>
             <img
               height={20}
