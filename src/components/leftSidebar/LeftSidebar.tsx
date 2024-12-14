@@ -24,20 +24,21 @@ const menuItemStyle = {
     color: 'hsl(var(--foreground)) !important',
     borderRadius: 6,
     [`&.active`]: {
-      backgroundColor: 'hsl(var(--primary) / 5%) !important',
+      backgroundColor: 'hsl(var(--primary) / 8%) !important',
       color: 'hsl(var(--primary)) !important',
     },
     [`&:hover`]: {
-      backgroundColor: 'hsl(var(--primary) / 5%) !important',
+      backgroundColor: 'hsl(var(--primary) / 8%) !important',
       color: 'hsl(var(--primary)) !important',
     },
   },
   [`.${menuClasses.icon}`]: {
     margin: '0 !important',
+    fontSize: 16,
   },
   [`.${menuClasses.label}`]: {
     fontSize: 14,
-    fontWeight: 500,
+    fontWeight: 400,
   },
 };
 

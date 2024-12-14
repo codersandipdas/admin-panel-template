@@ -64,9 +64,7 @@ const MainLayout = () => {
                 <TbLayoutSidebarLeftExpand size={20} />
               </button>
             )}
-            <h2 className='text-lg font-bold text-foreground/50'>
-              {activeRoute.label}
-            </h2>
+            <h2 className='text-foreground/80'>{activeRoute.label}</h2>
           </div>
           <div>
             <ThemeSwitcher />
