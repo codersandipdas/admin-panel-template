@@ -57,7 +57,7 @@ const MainLayout = () => {
       />
 
       <div className='flex-1 flex flex-col'>
-        <div className='shrink-0 flex gap-4 h-[56px] border-b border-border items-center px-4 py-2 justify-between'>
+        <header className='shrink-0 flex gap-4 h-[56px] border-b border-border items-center px-4 py-2 justify-between'>
           <div className='flex gap-4 items-center'>
             {(broken || collapsed) && (
               <button className='' onClick={handleShowSidebar}>
@@ -69,13 +69,13 @@ const MainLayout = () => {
           <div>
             <ThemeSwitcher />
           </div>
-        </div>
+        </header>
 
-        <div className='flex-1 p-4 overflow-x-hidden overflow-y-auto custom-scrollbar'>
+        <main className='flex-1 p-4 overflow-x-hidden overflow-y-auto custom-scrollbar'>
           <div className='w-full max-w-[1536px] mx-auto'>
             <Outlet />
           </div>
-        </div>
+        </main>
       </div>
     </div>
   );

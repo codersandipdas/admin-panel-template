@@ -1,23 +1,77 @@
+import { AiOutlineDashboard, AiOutlineProduct } from 'react-icons/ai';
+import { BsCartCheck } from 'react-icons/bs';
+import { CgToolbarTop } from 'react-icons/cg';
 import { FaRegStickyNote } from 'react-icons/fa';
 import { FaRegSquareCheck } from 'react-icons/fa6';
 import { HiOutlineDocumentReport } from 'react-icons/hi';
-import { MdOutlineEmail, MdOutlineNotifications } from 'react-icons/md';
-import { TbAutomaticGearbox } from 'react-icons/tb';
+import {
+  MdOutlineCategory,
+  MdOutlineNotifications,
+  MdOutlineSettings,
+} from 'react-icons/md';
+import { TbPhotoVideo, TbUsers } from 'react-icons/tb';
+import Notifications from '../pages/notifications/Notifications';
 import { RouteType } from './types';
+import Dashbaord from '../pages/dashbaord/Dashboard';
+import Products from '../pages/products/Products';
 
 export const routes: RouteType[] = [
+  {
+    label: 'Dashboard',
+    icon: <AiOutlineDashboard />,
+    path: '/dashboard',
+    component: <Dashbaord />,
+  },
+  {
+    label: 'Products',
+    icon: <AiOutlineProduct />,
+    path: '/products',
+    component: <Products />,
+  },
+  {
+    label: 'Categories',
+    icon: <MdOutlineCategory />,
+    path: '/categories',
+    component: (
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi delectus
+        impedit corrupti quam ducimus quis facilis qui iure aliquam quia
+        possimus obcaecati mollitia ipsum sunt voluptate, nulla, illum quidem
+        dolorum?
+      </div>
+    ),
+  },
+  {
+    label: 'Orders',
+    icon: <BsCartCheck />,
+    path: '/orders',
+    component: (
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi delectus
+        impedit corrupti quam ducimus quis facilis qui iure aliquam quia
+        possimus obcaecati mollitia ipsum sunt voluptate, nulla, illum quidem
+        dolorum?
+      </div>
+    ),
+  },
+  {
+    label: 'Media',
+    icon: <TbPhotoVideo size={18} />,
+    path: '/media',
+    component: (
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi delectus
+        impedit corrupti quam ducimus quis facilis qui iure aliquam quia
+        possimus obcaecati mollitia ipsum sunt voluptate, nulla, illum quidem
+        dolorum?
+      </div>
+    ),
+  },
   {
     label: 'Notifications',
     icon: <MdOutlineNotifications size={20} />,
     path: '/notifications',
-    component: (
-      <div>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
-        voluptatem officia unde alias quisquam eius atque, asperiores
-        blanditiis! Reiciendis quidem a cupiditate perferendis perspiciatis,
-        modi expedita vero saepe ipsum odit.
-      </div>
-    ),
+    component: <Notifications />,
   },
   {
     label: 'Tasks',
@@ -46,19 +100,6 @@ export const routes: RouteType[] = [
     ),
   },
   {
-    label: 'Emails',
-    icon: <MdOutlineEmail />,
-    path: '/emails',
-    component: (
-      <div>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
-        amet quia illum perferendis maxime itaque dolor rerum recusandae
-        expedita fugit, sed, mollitia natus accusantium a voluptates excepturi
-        quibusdam aspernatur. Voluptatibus.
-      </div>
-    ),
-  },
-  {
     label: 'Reports',
     icon: <HiOutlineDocumentReport />,
     path: '/reports',
@@ -72,15 +113,41 @@ export const routes: RouteType[] = [
     ),
   },
   {
-    label: 'Automations',
-    icon: <TbAutomaticGearbox />,
-    path: '/automations',
+    label: 'Users',
+    icon: <TbUsers />,
+    path: '/users',
     component: (
       <div>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
-        pariatur cumque minima fugit unde vitae quam facilis deleniti molestiae
-        qui vero assumenda adipisci obcaecati nostrum fugiat, fuga harum
-        repellat repudiandae?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi delectus
+        impedit corrupti quam ducimus quis facilis qui iure aliquam quia
+        possimus obcaecati mollitia ipsum sunt voluptate, nulla, illum quidem
+        dolorum?
+      </div>
+    ),
+  },
+  {
+    label: 'Topbars',
+    icon: <CgToolbarTop />,
+    path: '/topbars',
+    component: (
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi delectus
+        impedit corrupti quam ducimus quis facilis qui iure aliquam quia
+        possimus obcaecati mollitia ipsum sunt voluptate, nulla, illum quidem
+        dolorum?
+      </div>
+    ),
+  },
+  {
+    label: 'Settings',
+    icon: <MdOutlineSettings />,
+    path: '/settings',
+    component: (
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi delectus
+        impedit corrupti quam ducimus quis facilis qui iure aliquam quia
+        possimus obcaecati mollitia ipsum sunt voluptate, nulla, illum quidem
+        dolorum?
       </div>
     ),
   },

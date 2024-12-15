@@ -12,6 +12,8 @@ export default {
         border: 'hsl(var(--border))',
         card: 'hsl(var(--card))',
         muted: 'hsl(var(--muted))',
+        border: 'hsl(var(--border))',
+        'accent-foreground': 'hsl(var(--accent-foreground))',
       },
     },
   },

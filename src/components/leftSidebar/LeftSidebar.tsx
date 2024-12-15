@@ -4,7 +4,7 @@ import {
   TbLayoutSidebarLeftExpand,
 } from 'react-icons/tb';
 import { Menu, MenuItem, Sidebar, menuClasses } from 'react-pro-sidebar';
-import { Link, NavLink } from 'react-router';
+import { NavLink } from 'react-router';
 import { routes } from '../../utils/routes';
 import { RouteType } from '../../utils/types';
 
@@ -99,40 +99,7 @@ const LeftSidebar: React.FC<Props> = ({
                   key={route.path}
                   rootStyles={menuItemStyle}
                   icon={route.icon}
-                  component={<Link to={route.path} />}
-                  onClick={() => onMenuClick(route)}
-                >
-                  {route.label}
-                </MenuItem>
-              ))}
-              {routes.map((route) => (
-                <MenuItem
-                  key={route.path}
-                  rootStyles={menuItemStyle}
-                  icon={route.icon}
-                  component={<Link to={route.path} />}
-                  onClick={() => onMenuClick(route)}
-                >
-                  {route.label}
-                </MenuItem>
-              ))}
-              {routes.map((route) => (
-                <MenuItem
-                  key={route.path}
-                  rootStyles={menuItemStyle}
-                  icon={route.icon}
-                  component={<Link to={route.path} />}
-                  onClick={() => onMenuClick(route)}
-                >
-                  {route.label}
-                </MenuItem>
-              ))}
-              {routes.map((route) => (
-                <MenuItem
-                  key={route.path}
-                  rootStyles={menuItemStyle}
-                  icon={route.icon}
-                  component={<Link to={route.path} />}
+                  component={<NavLink to={route.path} />}
                   onClick={() => onMenuClick(route)}
                 >
                   {route.label}
