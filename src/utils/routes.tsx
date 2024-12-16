@@ -19,7 +19,7 @@ export const routes: RouteType[] = [
   {
     label: 'Dashboard',
     icon: <AiOutlineDashboard />,
-    path: '/dashboard',
+    path: '/',
     component: <Dashbaord />,
   },
   {
