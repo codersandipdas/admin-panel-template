@@ -81,7 +81,7 @@ const LeftSidebar: React.FC<Props> = ({
             </button>
           </div>
 
-          <div className='flex-1 overflow-x-hidden overflow-y-scroll custom-scrollbar p-4'>
+          <div className='flex-1 overflow-x-hidden overflow-y-auto custom-scrollbar p-4'>
             <Menu>
               {routes.map((route) => (
                 <MenuItem
