@@ -22,7 +22,7 @@ const menuItemStyle = {
     padding: '0 0 !important',
     height: 'auto !important',
     color: 'hsl(var(--foreground)) !important',
-    borderRadius: 6,
+    borderRadius: 10,
     [`&.active`]: {
       backgroundColor: 'hsl(var(--primary) / 8%) !important',
       color: 'hsl(var(--primary)) !important',
@@ -35,6 +35,9 @@ const menuItemStyle = {
   [`.${menuClasses.icon}`]: {
     margin: '0 !important',
     fontSize: 16,
+    height: 32,
+    width: 32,
+    opacity: 0.6,
   },
   [`.${menuClasses.label}`]: {
     fontSize: 14,
@@ -57,7 +60,7 @@ const LeftSidebar: React.FC<Props> = ({
         toggled={toggled}
         onBackdropClick={onBackdropClick}
         onBreakPoint={onBreakPoint}
-        breakPoint='md'
+        breakPoint='lg'
         width='260px'
         collapsedWidth='0px'
         rootStyles={{
@@ -72,7 +75,11 @@ const LeftSidebar: React.FC<Props> = ({
               className='h-[24px] w-auto'
               src={'/assets/logo/logoipsum-297.svg'}
             />
-            <button type='button' className='shrink-0' onClick={onCollapse}>
+            <button
+              type='button'
+              className='shrink-0 opacity-60'
+              onClick={onCollapse}
+            >
               {collapsed ? (
                 <TbLayoutSidebarLeftExpand size={20} />
               ) : (

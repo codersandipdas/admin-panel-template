@@ -12,7 +12,7 @@ const Products = () => {
       >
         <Link to={'/products/new'} className='btn-primary'>
           <MdOutlineAdd />
-          <span>Add new</span>
+          <span>New Product</span>
         </Link>
       </PageTitle>
 

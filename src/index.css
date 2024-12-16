@@ -45,7 +45,7 @@ body {
     /* --background: 222.2 84% 4.9%; */
     --background: 240 10% 3.9%;
     /* --foreground: 210 40% 98%; */
-    --foreground: 0 0% 98%;
+    --foreground: 220 10% 94%;
     /* --card: 222.2 84% 4.9%; */
     --card: 240 6% 10%;
     --card-foreground: 210 40% 98%;
@@ -75,7 +75,7 @@ body {
 
 @layer components {
   .btn-primary {
-    @apply bg-primary hover:bg-primary/90 text-background px-4 py-2 rounded flex items-center gap-1 transition-all disabled:opacity-50 disabled:cursor-not-allowed;
+    @apply bg-primary hover:bg-primary/90 text-white px-2 py-1.5 rounded-lg flex items-center gap-1 transition-all disabled:opacity-50 disabled:cursor-not-allowed;
   }
 }
 

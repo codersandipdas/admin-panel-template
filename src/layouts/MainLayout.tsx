@@ -60,11 +60,11 @@ const MainLayout = () => {
         <header className='shrink-0 flex gap-4 h-[56px] border-b border-border items-center px-4 py-2 justify-between'>
           <div className='flex gap-4 items-center'>
             {(broken || collapsed) && (
-              <button className='' onClick={handleShowSidebar}>
+              <button className='opacity-60' onClick={handleShowSidebar}>
                 <TbLayoutSidebarLeftExpand size={20} />
               </button>
             )}
-            <h2 className='text-foreground/80'>{activeRoute.label}</h2>
+            <h2 className='text-foreground'>{activeRoute.label}</h2>
           </div>
           <div>
             <ThemeSwitcher />
