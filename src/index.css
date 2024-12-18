@@ -96,3 +96,12 @@ body {
   scrollbar-color: #bdbdbd transparent;
   scrollbar-color: hsl(var(--foreground) / 20%) transparent;
 }
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: hsl(var(--primary)) !important;
+}

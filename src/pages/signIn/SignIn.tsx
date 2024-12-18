@@ -22,7 +22,12 @@ const SignIn = () => {
       <div className='min-h-screen flex fle-col items-center justify-center py-6 px-4'>
         <div className='grid md:grid-cols-2 items-center gap-10 max-w-6xl w-full'>
           <div className='hidden md:block'>
-            <h2 className='lg:text-5xl text-4xl font-extrabold lg:leading-[55px]'>
+            <img
+              height={20}
+              className='h-[24px] w-auto'
+              src={'/assets/logo/logoipsum-297.svg'}
+            />
+            <h2 className='mt-6 lg:text-5xl text-4xl font-extrabold lg:leading-[55px]'>
               Seamless Login for Exclusive Access
             </h2>
             <p className='mt-6'>
@@ -44,27 +49,35 @@ const SignIn = () => {
             </p>
 
             <div className='space-y-4 mt-8'>
-              <div>
+              <div className='relative'>
                 <input
-                  name='email'
+                  id='email'
                   type='email'
-                  autoComplete='email'
-                  required
+                  className='bg-gray-100 dark:bg-gray-100/10 peer block w-full rounded-md px-4 pb-2 pt-7 border border-transparent focus:border-primary focus:ring-primary outline outline-transparent focus:outline-primary'
+                  placeholder=''
                   defaultValue='test@test.com'
-                  className='bg-gray-100 dark:bg-gray-100/10 w-full px-4 py-3.5 rounded-md outline-primary focus:bg-transparent'
-                  placeholder='Email address'
                 />
+                <label
+                  htmlFor='email'
+                  className='text-foreground/60 absolute left-4 top-[1.15rem] origin-[0] -translate-y-3 scale-75 duration-150 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-3 peer-focus:scale-75'
+                >
+                  Email
+                </label>
               </div>
-              <div>
+              <div className='relative'>
                 <input
-                  name='password'
+                  id='password'
                   type='password'
-                  autoComplete='current-password'
-                  required
+                  className='bg-gray-100 dark:bg-gray-100/10 peer block w-full rounded-md px-4 pb-2 pt-7 border border-transparent focus:border-primary focus:ring-primary outline outline-transparent focus:outline-primary'
+                  placeholder=''
                   defaultValue='test@test.com'
-                  className='bg-gray-100 dark:bg-gray-100/10 w-full px-4 py-3.5 rounded-md outline-primary focus:bg-transparent'
-                  placeholder='Password'
                 />
+                <label
+                  htmlFor='password'
+                  className='text-foreground/60 absolute left-4 top-[1.15rem] origin-[0] -translate-y-3 scale-75 duration-150 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-3 peer-focus:scale-75'
+                >
+                  Password
+                </label>
               </div>
               <div className='flex flex-wrap items-center justify-between gap-4'>
                 <div className='flex items-center'>
